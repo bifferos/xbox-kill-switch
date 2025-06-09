@@ -6,6 +6,16 @@ This Arduino sketch implements a kill switch for disabling the Xbox360.
 It can be used as part of a parental control strategy for disabling 
 the xbox during unsuitable times (e.g. 06:00am before school!).
 
+Instead of disabling the xbox itself, it's easiest to disable the PSU.
+The PSU supplies 5v standby to the console at all times, which allows
+powering up of the PSU from the console itself.  The console sends a 
+3.3v signal on the blue cable to the PSU IC, and this switches on the
+12v rail, required for playing games.  If the blue cable is interrupted
+the xbox powers down.  So all that's required is something that prevents
+the blue signal getting from the xbox to the PSU.  The just needs 3.3v
+GPIO input (from the xbox) and output (to the PSU).  The ESP decides when
+the signal will be allowed through.
+
 ## Hardware Requirements
 
 - ESP32-C3 Miniboard
