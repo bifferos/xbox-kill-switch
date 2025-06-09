@@ -44,7 +44,7 @@ enable/disable the xbox then you can just use the UDP server.
 
 Remove the LED board, we'll put the ESP there.
 
-[![led_board](images/1_led_board.jpg)]
+![led_board](images/1_led_board.jpg)
 
 
 ### Step 2
@@ -52,7 +52,7 @@ Remove the LED board, we'll put the ESP there.
 Desolder the blue cable, we need to break into it.  Add another
 cable from the PSU PCB 
 
-[![led_board](images/2_blue.jpg)]
+![led_board](images/2_blue.jpg)
 
 
 ### Step 3
@@ -61,7 +61,7 @@ Add a power cable, the only place you can get 5v is to solder
 directly onto the outgoing 5v supply, unless you break into the
 5v cable by removing it, then tee off it.
 
-[![led_board](images/3_power.jpg)]
+![led_board](images/3_power.jpg)
 
 
 
