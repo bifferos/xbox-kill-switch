@@ -139,7 +139,7 @@ void loop()
 
   unsigned long time_now = millis();
   // Polling every second is overkill, back this off once it's all tested working.
-  if ((time_now - last_poll) > 1000)
+  if ((time_now - last_poll) > 5000)
   {
     last_poll = time_now;
     sendPacket();
