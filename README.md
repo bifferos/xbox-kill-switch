@@ -64,4 +64,33 @@ directly onto the outgoing 5v supply, unless you break into the
 ![led_board](images/3_power.jpg)
 
 
+### Step 4
+
+Put a right-angle header on.  note that only the right-hand pins are used (for power/gnd).  The other pins are only there for support.
+
+![header](images/4_header.jpg)
+
+
+### Step 5
+
+Header into perfboard, and then into the PCB.  The perfboard is there to accept the cables.  I introduced an intermediate board, because
+the ESP32-C3 miniboard is incredibly thin, thinner than the ESP-01S even.  I didn't want free cables that can move around inside the PSU to connect direct to the ESP32-C3.
+So the ESP site on the PERF board, and only connects to it.  This gives the whole thing a lot more strength.
+
+![soldered](images/5_soldered.jpg)
+
+
+### Step 6
+
+Power can go through the hole vacated by the original LED board edge (it sticks through the hole).
+
+![power](images/6_power.jpg)
+
+![perf](images/7_perf.jpg)
+
+![complete](images/8_complete.jpg)
+
+
+
+
 
